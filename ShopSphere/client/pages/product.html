@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Products</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="section">
+    <div class="container" id="listingPage">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Product Listing</span>
+          <h1>Shop Products</h1>
+        </div>
+        <p id="pageInfo"></p>
+      </div>
+      <div class="shop-layout">
+        <aside class="panel filters">
+          <form id="filterForm">
+            <div class="field">
+              <label for="search">Search</label>
+              <input id="search" name="search" placeholder="Laptop, shoes, watch">
+            </div>
+            <div class="field">
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option value="">All</option>
+                <option>Laptop</option>
+                <option>Shoes</option>
+                <option>Watch</option>
+                <option>Clothes</option>
+                <option>Phone</option>
+                <option>Accessories</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="minPrice">Min Price</label>
+              <input id="minPrice" name="minPrice" type="number" min="0">
+            </div>
+            <div class="field">
+              <label for="maxPrice">Max Price</label>
+              <input id="maxPrice" name="maxPrice" type="number" min="0">
+            </div>
+            <div class="field">
+              <label for="sort">Sort</label>
+              <select id="sort" name="sort">
+                <option value="newest">Newest</option>
+                <option value="price_asc">Price: Low to High</option>
+                <option value="price_desc">Price: High to Low</option>
+                <option value="rating">Rating</option>
+              </select>
+            </div>
+            <button class="btn full-width">Apply</button>
+          </form>
+        </aside>
+        <section>
+          <div class="grid product-grid" id="productGrid"></div>
+          <div class="pagination"><button class="icon-btn active">1</button></div>
+        </section>
+      </div>
+    </div>
+    <div class="container" id="productDetail"></div>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="../js/product.js"></script>
+</body>
+</html>

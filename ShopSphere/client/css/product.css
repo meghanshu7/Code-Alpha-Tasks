@@ -1,0 +1,144 @@
+.shop-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.filters {
+  position: sticky;
+  top: 92px;
+  padding: 18px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-weight: 750;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 0 12px;
+}
+
+.field textarea {
+  min-height: 96px;
+  padding-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.pagination button.active {
+  background: var(--brand);
+  color: #fff;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.gallery-main {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--surface-soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.gallery-main img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumb-row img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.thumb-row img.active {
+  border-color: var(--brand);
+}
+
+.detail-panel {
+  padding: 24px;
+}
+
+.detail-price {
+  font-size: 2rem;
+  color: var(--brand-dark);
+  font-weight: 900;
+}
+
+.stock {
+  color: var(--success);
+  font-weight: 800;
+}
+
+.stock.out {
+  color: var(--danger);
+}
+
+.rating-bars {
+  display: grid;
+  gap: 8px;
+}
+
+.rating-bar {
+  display: grid;
+  grid-template-columns: 44px 1fr 36px;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar {
+  height: 9px;
+  background: var(--surface-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+}
+
+@media (max-width: 860px) {
+  .shop-layout,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    position: static;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Featured marketplace</span>
+        <h1>ShopSphere</h1>
+        <p>Discover laptops, shoes, watches, clothes, phones, and accessories with fast search, wishlist, cart, checkout, reviews, and order tracking.</p>
+        <form class="hero-search" action="/pages/product.html">
+          <input name="search" id="homeSearch" placeholder="Search Laptop, Laptop Bag, Laptop Stand" autocomplete="off">
+          <button class="btn">Search</button>
+        </form>
+        <div class="hero-metrics">
+          <div><strong>24+</strong><span>Seeded products</span></div>
+          <div><strong>6</strong><span>Categories</span></div>
+          <div><strong>JWT</strong><span>Secure login</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>Protected Checkout</strong><span>JWT authentication and order history</span></div>
+        <div><strong>Smart Catalog</strong><span>Search, filters, sorting, and product detail pages</span></div>
+        <div><strong>Admin Ready</strong><span>Product, order, user, and revenue dashboard surfaces</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Categories</span>
+            <h2>Browse Departments</h2>
+          </div>
+        </div>
+        <div class="grid category-grid">
+          <a class="category-tile" href="/pages/product.html?category=Laptop"><span class="category-icon">⌨</span><strong>Laptop</strong></a>
+          <a class="category-tile" href="/pages/product.html?category=Shoes"><span class="category-icon">◒</span><strong>Shoes</strong></a>
+          <a class="category-tile" href="/pages/product.html?category=Watch"><span class="category-icon">◷</span><strong>Watch</strong></a>
+          <a class="category-tile" href="/pages/product.html?category=Clothes"><span class="category-icon">▣</span><strong>Clothes</strong></a>
+          <a class="category-tile" href="/pages/product.html?category=Phone"><span class="category-icon">▯</span><strong>Phone</strong></a>
+          <a class="category-tile" href="/pages/product.html?category=Accessories"><span class="category-icon">◎</span><strong>Accessories</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase-band">
+      <div class="container showcase-grid">
+        <div>
+          <span class="eyebrow">Portfolio Features</span>
+          <h2>Built Like A Real E-Commerce Project</h2>
+          <p>ShopSphere includes authenticated access, seeded MongoDB products, local cart and wishlist flows, comparison, order tracking, coupons, responsive design, and an admin dashboard foundation.</p>
+          <div class="feature-list">
+            <span>JWT Auth</span>
+            <span>MongoDB Seed Data</span>
+            <span>Product Compare</span>
+            <span>Order Tracking</span>
+          </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=80" alt="Online shopping dashboard preview">
+      </div>
+    </section>
+
+    <section class="section trend-band">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Featured Products</span>
+            <h2>Picked For Today</h2>
+          </div>
+          <a class="btn-outline" href="/pages/product.html">View All</a>
+        </div>
+        <div class="grid product-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Latest Products</span>
+            <h2>Fresh Arrivals</h2>
+          </div>
+        </div>
+        <div class="grid product-grid" id="latestGrid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container feature-strip">
+        <div class="mini-feature"><strong>Coupons</strong><p>SAVE20, WELCOME10, and FREESHIP are ready for checkout.</p></div>
+        <div class="mini-feature"><strong>Inventory</strong><p>Stock is reduced automatically after order placement.</p></div>
+        <div class="mini-feature"><strong>Tracking</strong><p>Placed, Packed, Shipped, Out for Delivery, Delivered.</p></div>
+        <div class="mini-feature"><strong>Assistant</strong><p>Natural-language product matching is ready to extend.</p></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script type="module">
+    import { boot, getProducts, requireAuth, sampleProducts, productCard, wireProductActions } from "../js/app.js";
+    boot("Home");
+    if (requireAuth()) {
+      const result = await getProducts({ limit: 24 });
+      const catalog = result.products.length ? result.products : sampleProducts;
+      const featured = catalog.filter((product) => product.featured).slice(0, 4);
+      const latest = [...catalog].reverse();
+      document.getElementById("featuredGrid").innerHTML = featured.map(productCard).join("");
+      document.getElementById("latestGrid").innerHTML = latest.slice(0, 4).map(productCard).join("");
+      wireProductActions(catalog);
+    }
+  </script>
+</body>
+</html>

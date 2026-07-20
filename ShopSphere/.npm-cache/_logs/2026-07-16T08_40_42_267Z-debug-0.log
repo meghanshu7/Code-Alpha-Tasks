@@ -1,0 +1,366 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.7.0
+2 info using node@v25.4.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/meghanshu/CodeAlpha_tasks/ShopSphere/.npmrc
+5 silly config load:file:/Users/meghanshu/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install multer@latest
+8 verbose argv "install" "--cache" ".npm-cache" "multer@latest"
+9 verbose logfile logs-max:10 dir:/Users/meghanshu/CodeAlpha_tasks/ShopSphere/.npm-cache/_logs/2026-07-16T08_40_42_267Z-
+10 verbose logfile /Users/meghanshu/CodeAlpha_tasks/ShopSphere/.npm-cache/_logs/2026-07-16T08_40_42_267Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly packumentCache corgi:https://registry.npmjs.org/multer cache-miss
+14 http fetch GET 200 https://registry.npmjs.org/multer 409ms (cache miss)
+15 silly packumentCache corgi:https://registry.npmjs.org/multer set size:undefined disposed:false
+16 silly idealTree buildDeps
+17 silly fetch manifest multer@2.2.0
+18 silly packumentCache full:https://registry.npmjs.org/multer cache-miss
+19 http cache https://registry.npmjs.org/multer 5ms (cache hit)
+20 silly packumentCache full:https://registry.npmjs.org/multer set size:156441 disposed:false
+21 silly placeDep ROOT multer@2.2.0 REPLACE for: shopsphere@1.0.0 want: 2.2.0
+22 silly fetch manifest concat-stream@^2.0.0
+23 silly packumentCache full:https://registry.npmjs.org/concat-stream cache-miss
+24 http cache https://registry.npmjs.org/concat-stream 3ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/concat-stream set size:63783 disposed:false
+26 silly placeDep ROOT concat-stream@2.0.0 OK for: multer@2.2.0 want: ^2.0.0
+27 silly fetch manifest buffer-from@^1.0.0
+28 silly packumentCache full:https://registry.npmjs.org/buffer-from cache-miss
+29 silly fetch manifest readable-stream@^3.0.2
+30 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+31 silly fetch manifest typedarray@^0.0.6
+32 silly packumentCache full:https://registry.npmjs.org/typedarray cache-miss
+33 http cache https://registry.npmjs.org/typedarray 3ms (cache hit)
+34 silly packumentCache full:https://registry.npmjs.org/typedarray set size:18469 disposed:false
+35 http cache https://registry.npmjs.org/buffer-from 5ms (cache hit)
+36 silly packumentCache full:https://registry.npmjs.org/buffer-from set size:15463 disposed:false
+37 http cache https://registry.npmjs.org/readable-stream 6ms (cache hit)
+38 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+39 silly placeDep ROOT buffer-from@1.1.2 OK for: concat-stream@2.0.0 want: ^1.0.0
+40 silly placeDep ROOT readable-stream@3.6.2 OK for: concat-stream@2.0.0 want: ^3.0.2
+41 silly placeDep ROOT typedarray@0.0.6 OK for: concat-stream@2.0.0 want: ^0.0.6
+42 silly reify mark retired [
+42 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/are-we-there-yet/node_modules/readable-stream'
+42 silly reify ]
+43 silly reify mark retired [
+43 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/concat-stream'
+43 silly reify ]
+44 silly reify mark retired [
+44 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/core-util-is'
+44 silly reify ]
+45 silly reify mark retired [ '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/isarray' ]
+46 silly reify mark retired [ '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/minimist' ]
+47 silly reify mark retired [
+47 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/mkdirp',
+47 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.bin/mkdirp'
+47 silly reify ]
+48 silly reify mark retired [ '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/multer' ]
+49 silly reify mark retired [
+49 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/process-nextick-args'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/readable-stream'
+50 silly reify ]
+51 silly reify mark retired [ '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/xtend' ]
+52 silly reify moves {
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/are-we-there-yet/node_modules/readable-stream': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/are-we-there-yet/node_modules/.readable-stream-7S2h8aY0',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/concat-stream': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.concat-stream-sc5dPt6m',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/core-util-is': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.core-util-is-PqOKuW3t',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/isarray': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.isarray-5XzUnWJQ',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/minimist': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.minimist-C8L8vZ2T',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/mkdirp': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.mkdirp-M8SBQyde',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.bin/mkdirp': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.bin/.mkdirp-XqagGc6u',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/multer': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.multer-hBTqUtDM',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/process-nextick-args': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.process-nextick-args-3BU2fwgW',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/readable-stream': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.readable-stream-sSnzp7Yw',
+52 silly reify   '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/xtend': '/Users/meghanshu/CodeAlpha_tasks/ShopSphere/node_modules/.xtend-wdxLwW8G'
+52 silly reify }
+53 silly audit bulk request {
+53 silly audit   '@mapbox/node-pre-gyp': [ '1.0.11' ],
+53 silly audit   '@mongodb-js/saslprep': [ '1.4.12' ],
+53 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+53 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+53 silly audit   abbrev: [ '1.1.1' ],
+53 silly audit   accepts: [ '1.3.8' ],
+53 silly audit   'agent-base': [ '6.0.2' ],
+53 silly audit   debug: [ '4.4.3', '2.6.9' ],
+53 silly audit   ms: [ '2.1.3', '2.0.0' ],
+53 silly audit   'ansi-regex': [ '5.0.1' ],
+53 silly audit   anymatch: [ '3.1.3' ],
+53 silly audit   'append-field': [ '1.0.0' ],
+53 silly audit   aproba: [ '2.1.0' ],
+53 silly audit   'are-we-there-yet': [ '2.0.0' ],
+53 silly audit   'readable-stream': [ '3.6.2' ],
+53 silly audit   'array-flatten': [ '1.1.1' ],
+53 silly audit   'balanced-match': [ '4.0.4', '1.0.2' ],
+53 silly audit   'basic-auth': [ '2.0.1' ],
+53 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+53 silly audit   bcrypt: [ '5.1.1' ],
+53 silly audit   'binary-extensions': [ '2.3.0' ],
+53 silly audit   'body-parser': [ '1.20.6' ],
+53 silly audit   'brace-expansion': [ '5.0.7', '1.1.16' ],
+53 silly audit   braces: [ '3.0.3' ],
+53 silly audit   bson: [ '6.10.4' ],
+53 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+53 silly audit   busboy: [ '1.6.0' ],
+53 silly audit   bytes: [ '3.1.2' ],
+53 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+53 silly audit   'call-bound': [ '1.0.4' ],
+53 silly audit   chokidar: [ '3.6.0' ],
+53 silly audit   chownr: [ '2.0.0' ],
+53 silly audit   'color-support': [ '1.1.3' ],
+53 silly audit   'concat-map': [ '0.0.1' ],
+53 silly audit   'console-control-strings': [ '1.1.0' ],
+53 silly audit   'content-disposition': [ '0.5.4' ],
+53 silly audit   'content-type': [ '1.0.5' ],
+53 silly audit   cookie: [ '0.7.2' ],
+53 silly audit   'cookie-parser': [ '1.4.7' ],
+53 silly audit   'cookie-signature': [ '1.0.6' ],
+53 silly audit   delegates: [ '1.0.0' ],
+53 silly audit   depd: [ '2.0.0' ],
+53 silly audit   destroy: [ '1.2.0' ],
+53 silly audit   'detect-libc': [ '2.1.2' ],
+53 silly audit   dotenv: [ '16.6.1' ],
+53 silly audit   'dunder-proto': [ '1.0.1' ],
+53 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+53 silly audit   'ee-first': [ '1.1.1' ],
+53 silly audit   'emoji-regex': [ '8.0.0' ],
+53 silly audit   encodeurl: [ '2.0.0' ],
+53 silly audit   'es-define-property': [ '1.0.1' ],
+53 silly audit   'es-errors': [ '1.3.0' ],
+53 silly audit   'es-object-atoms': [ '1.1.2' ],
+53 silly audit   'escape-html': [ '1.0.3' ],
+53 silly audit   etag: [ '1.8.1' ],
+53 silly audit   express: [ '4.22.2' ],
+53 silly audit   'express-validator': [ '7.3.2' ],
+53 silly audit   'fill-range': [ '7.1.1' ],
+53 silly audit   finalhandler: [ '1.3.2' ],
+53 silly audit   forwarded: [ '0.2.0' ],
+53 silly audit   fresh: [ '0.5.2' ],
+53 silly audit   'fs-minipass': [ '2.1.0' ],
+53 silly audit   minipass: [ '3.3.6', '5.0.0' ],
+53 silly audit   'fs.realpath': [ '1.0.0' ],
+53 silly audit   fsevents: [ '2.3.3' ],
+53 silly audit   'function-bind': [ '1.1.2' ],
+53 silly audit   gauge: [ '3.0.2' ],
+53 silly audit   'get-intrinsic': [ '1.3.0' ],
+53 silly audit   'get-proto': [ '1.0.1' ],
+53 silly audit   glob: [ '7.2.3' ],
+53 silly audit   'glob-parent': [ '5.1.2' ],
+53 silly audit   minimatch: [ '3.1.5', '10.2.5' ],
+53 silly audit   gopd: [ '1.2.0' ],
+53 silly audit   'has-flag': [ '3.0.0' ],
+53 silly audit   'has-symbols': [ '1.1.0' ],
+53 silly audit   'has-unicode': [ '2.0.1' ],
+53 silly audit   hasown: [ '2.0.4' ],
+53 silly audit   'http-errors': [ '2.0.1' ],
+53 silly audit   'https-proxy-agent': [ '5.0.1' ],
+53 silly audit   'iconv-lite': [ '0.4.24' ],
+53 silly audit   'ignore-by-default': [ '1.0.1' ],
+53 silly audit   inflight: [ '1.0.6' ],
+53 silly audit   inherits: [ '2.0.4' ],
+53 silly audit   'ipaddr.js': [ '1.9.1' ],
+53 silly audit   'is-binary-path': [ '2.1.0' ],
+53 silly audit   'is-extglob': [ '2.1.1' ],
+53 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+53 silly audit   'is-glob': [ '4.0.3' ],
+53 silly audit   'is-number': [ '7.0.0' ],
+53 silly audit   jsonwebtoken: [ '9.0.3' ],
+53 silly audit   jwa: [ '2.0.1' ],
+53 silly audit   jws: [ '4.0.1' ],
+53 silly audit   kareem: [ '2.6.3' ],
+53 silly audit   lodash: [ '4.18.1' ],
+53 silly audit   'lodash.includes': [ '4.3.0' ],
+53 silly audit   'lodash.isboolean': [ '3.0.3' ],
+53 silly audit   'lodash.isinteger': [ '4.0.4' ],
+53 silly audit   'lodash.isnumber': [ '3.0.3' ],
+53 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+53 silly audit   'lodash.isstring': [ '4.0.1' ],
+53 silly audit   'lodash.once': [ '4.1.1' ],
+53 silly audit   'make-dir': [ '3.1.0' ],
+53 silly audit   semver: [ '6.3.1', '7.8.5' ],
+53 silly audit   'math-intrinsics': [ '1.1.0' ],
+53 silly audit   'media-typer': [ '0.3.0' ],
+53 silly audit   'memory-pager': [ '1.5.0' ],
+53 silly audit   'merge-descriptors': [ '1.0.3' ],
+53 silly audit   methods: [ '1.1.2' ],
+53 silly audit   mime: [ '1.6.0' ],
+53 silly audit   'mime-db': [ '1.52.0' ],
+53 silly audit   'mime-types': [ '2.1.35' ],
+53 silly audit   minizlib: [ '2.1.2' ],
+53 silly audit   mkdirp: [ '1.0.4' ],
+53 silly audit   mongodb: [ '6.20.0' ],
+53 silly audit   'mongodb-connection-string-url': [ '3.0.2' ],
+53 silly audit   mongoose: [ '8.24.1' ],
+53 silly audit   morgan: [ '1.11.0' ],
+53 silly audit   mpath: [ '0.9.0' ],
+53 silly audit   mquery: [ '5.0.0' ],
+53 silly audit   negotiator: [ '0.6.3' ],
+53 silly audit   'node-addon-api': [ '5.1.0' ],
+53 silly audit   'node-fetch': [ '2.7.0' ],
+53 silly audit   tr46: [ '0.0.3', '5.1.1' ],
+53 silly audit   'webidl-conversions': [ '3.0.1', '7.0.0' ],
+53 silly audit   'whatwg-url': [ '5.0.0', '14.2.0' ],
+53 silly audit   nodemon: [ '3.1.14' ],
+53 silly audit   nopt: [ '5.0.0' ],
+53 silly audit   'normalize-path': [ '3.0.0' ],
+53 silly audit   npmlog: [ '5.0.1' ],
+53 silly audit   'object-assign': [ '4.1.1' ],
+53 silly audit   'object-inspect': [ '1.13.4' ],
+53 silly audit   'on-finished': [ '2.4.1' ],
+53 silly audit   'on-headers': [ '1.1.0' ],
+53 silly audit   once: [ '1.4.0' ],
+53 silly audit   parseurl: [ '1.3.3' ],
+53 silly audit   'path-is-absolute': [ '1.0.1' ],
+53 silly audit   'path-to-regexp': [ '0.1.13' ],
+53 silly audit   picomatch: [ '2.3.2' ],
+53 silly audit   'proxy-addr': [ '2.0.7' ],
+53 silly audit   'pstree.remy': [ '1.1.8' ],
+53 silly audit   punycode: [ '2.3.1' ],
+53 silly audit   qs: [ '6.15.3' ],
+53 silly audit   'range-parser': [ '1.2.1' ],
+53 silly audit   'raw-body': [ '2.5.3' ],
+53 silly audit   readdirp: [ '3.6.0' ],
+53 silly audit   rimraf: [ '3.0.2' ],
+53 silly audit   'safer-buffer': [ '2.1.2' ],
+53 silly audit   send: [ '0.19.2' ],
+53 silly audit   'serve-static': [ '1.16.3' ],
+53 silly audit   'set-blocking': [ '2.0.0' ],
+53 silly audit   setprototypeof: [ '1.2.0' ],
+53 silly audit   'side-channel': [ '1.1.1' ],
+53 silly audit   'side-channel-list': [ '1.0.1' ],
+53 silly audit   'side-channel-map': [ '1.0.1' ],
+53 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+53 silly audit   sift: [ '17.1.3' ],
+53 silly audit   'signal-exit': [ '3.0.7' ],
+53 silly audit   'simple-update-notifier': [ '2.0.0' ],
+53 silly audit   'sparse-bitfield': [ '3.0.3' ],
+53 silly audit   statuses: [ '2.0.2' ],
+53 silly audit   streamsearch: [ '1.1.0' ],
+53 silly audit   string_decoder: [ '1.1.1' ],
+53 silly audit   'string-width': [ '4.2.3' ],
+53 silly audit   'strip-ansi': [ '6.0.1' ],
+53 silly audit   'supports-color': [ '5.5.0' ],
+53 silly audit   tar: [ '6.2.1' ],
+53 silly audit   'to-regex-range': [ '5.0.1' ],
+53 silly audit   toidentifier: [ '1.0.1' ],
+53 silly audit   touch: [ '3.1.1' ],
+53 silly audit   'type-is': [ '1.6.18' ],
+53 silly audit   undefsafe: [ '2.0.5' ],
+53 silly audit   unpipe: [ '1.0.0' ],
+53 silly audit   'util-deprecate': [ '1.0.2' ],
+53 silly audit   'utils-merge': [ '1.0.1' ],
+53 silly audit   validator: [ '13.15.35' ],
+53 silly audit   vary: [ '1.1.2' ],
+53 silly audit   'wide-align': [ '1.1.5' ],
+53 silly audit   wrappy: [ '1.0.2' ],
+53 silly audit   yallist: [ '4.0.0' ],
+53 silly audit   multer: [ '2.2.0' ],
+53 silly audit   'concat-stream': [ '2.0.0' ],
+53 silly audit   'buffer-from': [ '1.1.2' ],
+53 silly audit   typedarray: [ '0.0.6' ]
+53 silly audit }
+54 http cache fsevents@https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz 0ms (cache hit)
+55 http cache concat-stream@https://registry.npmjs.org/concat-stream/-/concat-stream-2.0.0.tgz 0ms (cache hit)
+56 http cache multer@https://registry.npmjs.org/multer/-/multer-2.2.0.tgz 0ms (cache hit)
+57 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz 0ms (cache hit)
+58 silly tarball no local data for concat-stream@https://registry.npmjs.org/concat-stream/-/concat-stream-2.0.0.tgz. Extracting by manifest.
+59 silly tarball no local data for multer@https://registry.npmjs.org/multer/-/multer-2.2.0.tgz. Extracting by manifest.
+60 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 285ms
+61 silly audit report {
+61 silly audit report   tar: [
+61 silly audit report     {
+61 silly audit report       id: 1112659,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-34x7-hfp2-rc4v',
+61 silly audit report       title: 'node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal',
+61 silly audit report       severity: 'high',
+61 silly audit report       vulnerable_versions: '<7.5.7',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     },
+61 silly audit report     {
+61 silly audit report       id: 1113300,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-8qq5-rm4j-mr97',
+61 silly audit report       title: 'node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization',
+61 silly audit report       severity: 'high',
+61 silly audit report       vulnerable_versions: '<=7.5.2',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     },
+61 silly audit report     {
+61 silly audit report       id: 1113375,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-83g3-92jg-28cx',
+61 silly audit report       title: 'Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction',
+61 silly audit report       severity: 'high',
+61 silly audit report       vulnerable_versions: '<7.5.8',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     },
+61 silly audit report     {
+61 silly audit report       id: 1114200,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-qffp-2rhf-9h96',
+61 silly audit report       title: 'tar has Hardlink Path Traversal via Drive-Relative Linkpath',
+61 silly audit report       severity: 'high',
+61 silly audit report       vulnerable_versions: '<=7.5.9',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     },
+61 silly audit report     {
+61 silly audit report       id: 1114302,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-9ppj-qmqm-q256',
+61 silly audit report       title: 'node-tar Symlink Path Traversal via Drive-Relative Linkpath',
+61 silly audit report       severity: 'high',
+61 silly audit report       vulnerable_versions: '<=7.5.10',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     },
+61 silly audit report     {
+61 silly audit report       id: 1120782,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-vmf3-w455-68vh',
+61 silly audit report       title: 'node-tar applies PAX size override to intermediary GNU long-name/long-link headers, causing tar parser interpretation differential (file smuggling)',
+61 silly audit report       severity: 'moderate',
+61 silly audit report       vulnerable_versions: '<=7.5.15',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     },
+61 silly audit report     {
+61 silly audit report       id: 1114680,
+61 silly audit report       url: 'https://github.com/advisories/GHSA-r6q2-hw4h-h46w',
+61 silly audit report       title: 'Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS',
+61 silly audit report       severity: 'high',
+61 silly audit report       vulnerable_versions: '<=7.5.3',
+61 silly audit report       cwe: [Array],
+61 silly audit report       cvss: [Object]
+61 silly audit report     }
+61 silly audit report   ]
+61 silly audit report }
+62 silly packumentCache corgi:https://registry.npmjs.org/tar cache-miss
+63 http cache https://registry.npmjs.org/tar 14ms (cache hit)
+64 silly packumentCache corgi:https://registry.npmjs.org/tar set size:205953 disposed:false
+65 silly packumentCache corgi:https://registry.npmjs.org/@mapbox%2fnode-pre-gyp cache-miss
+66 http fetch GET 200 https://registry.npmjs.org/concat-stream/-/concat-stream-2.0.0.tgz 308ms (cache miss)
+67 http cache https://registry.npmjs.org/@mapbox%2fnode-pre-gyp 6ms (cache hit)
+68 silly packumentCache corgi:https://registry.npmjs.org/@mapbox%2fnode-pre-gyp set size:47144 disposed:false
+69 silly packumentCache corgi:https://registry.npmjs.org/bcrypt cache-miss
+70 http fetch GET 200 https://registry.npmjs.org/multer/-/multer-2.2.0.tgz 311ms (cache miss)
+71 http cache https://registry.npmjs.org/bcrypt 11ms (cache hit)
+72 silly packumentCache corgi:https://registry.npmjs.org/bcrypt set size:52606 disposed:false
+73 silly ADD node_modules/fsevents
+74 silly REMOVE node_modules/xtend
+75 silly CHANGE node_modules/readable-stream
+76 silly REMOVE node_modules/readable-stream/node_modules/safe-buffer
+77 silly REMOVE node_modules/process-nextick-args
+78 silly CHANGE node_modules/multer
+79 silly REMOVE node_modules/mkdirp
+80 silly REMOVE node_modules/minimist
+81 silly REMOVE node_modules/isarray
+82 silly REMOVE node_modules/core-util-is
+83 silly CHANGE node_modules/concat-stream
+84 silly REMOVE node_modules/are-we-there-yet/node_modules/readable-stream
+85 verbose cwd /Users/meghanshu/CodeAlpha_tasks/ShopSphere
+86 verbose os Darwin 25.1.0
+87 verbose node v25.4.0
+88 verbose npm  v11.7.0
+89 verbose exit 0
+90 info ok

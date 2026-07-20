@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Checkout</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Checkout</span>
+          <h1>Shipping Address</h1>
+        </div>
+      </div>
+      <div class="checkout-layout">
+        <form class="panel detail-panel" id="checkoutForm">
+          <div class="field"><label>Address</label><textarea name="address" required></textarea></div>
+          <div class="field"><label>Phone</label><input name="phone" required></div>
+          <div class="field"><label>City</label><input name="city" required></div>
+          <div class="field"><label>State</label><input name="state" required></div>
+          <div class="field"><label>Pincode</label><input name="pincode" required></div>
+          <div class="field">
+            <label>Payment Method</label>
+            <select name="paymentMethod">
+              <option>COD</option>
+              <option>UPI</option>
+              <option>Card</option>
+            </select>
+          </div>
+          <button class="btn full-width">Place Order</button>
+        </form>
+        <aside class="panel summary">
+          <h2>Payable</h2>
+          <div class="summary-line total"><span>Total</span><strong id="checkoutTotal"></strong></div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="../js/order.js"></script>
+</body>
+</html>

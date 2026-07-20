@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | Admin</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Admin Dashboard</span>
+          <h1>Manage Store</h1>
+        </div>
+      </div>
+      <section class="feature-strip" id="adminMetrics"></section>
+      <section class="grid admin-analytics" id="adminAnalytics"></section>
+      <section class="section dashboard-layout">
+        <div>
+          <div class="section-head">
+            <h2>Products</h2>
+            <span class="eyebrow">Orders / Users / Analytics / Revenue</span>
+          </div>
+          <div class="cart-list" id="adminProducts"></div>
+        </div>
+        <aside class="panel detail-panel">
+          <span class="eyebrow">Add Product</span>
+          <form id="productForm">
+            <div class="field"><label>Name</label><input name="name" required></div>
+            <div class="field"><label>Price</label><input name="price" type="number" required></div>
+            <div class="field">
+              <label>Category</label>
+              <select name="category">
+                <option>Laptop</option>
+                <option>Shoes</option>
+                <option>Watch</option>
+                <option>Clothes</option>
+                <option>Phone</option>
+                <option>Accessories</option>
+              </select>
+            </div>
+            <div class="field"><label>Stock</label><input name="stock" type="number" required></div>
+            <button class="btn full-width">Save Product</button>
+          </form>
+        </aside>
+      </section>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
